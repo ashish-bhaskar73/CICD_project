@@ -65,7 +65,7 @@ pipeline {
         }
 stage('Debug') {
     steps {
-        sh 'ls -l /path/to/your/workspace'
+        sh 'ls -l /var/lib/jenkins/workspace/pipeline'
         sh 'ps aux'
         # Add more debug commands as needed
     }
